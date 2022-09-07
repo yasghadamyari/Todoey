@@ -30,7 +30,14 @@
                             <outlet property="delegate" destination="yiN-bO-Tkc" id="6FG-pb-dQM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="fbP-ce-vae"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="fbP-ce-vae">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6cT-rv-E1Z">
+                            <color key="tintColor" systemColor="systemBlueColor"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="yiN-bO-Tkc" id="adw-9v-ZVr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00S-gN-HDZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +51,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jlb-4z-Fyt">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemIndigoColor"/>
+                        <color key="barTintColor" systemColor="systemBlueColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" systemColor="labelColor"/>
                         </textAttributes>
@@ -59,6 +66,7 @@
             <point key="canvasLocation" x="676.81159420289862" y="67.633928571428569"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="labelColor"/>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,8 +74,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
